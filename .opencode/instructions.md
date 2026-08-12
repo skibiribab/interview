@@ -4,10 +4,10 @@ Interview preparation monorepo.
 
 ## Structure
 
-- `behavioral/` — work stories + reference prep guidance.
-- `system-design/` — architecture examples, patterns, AWS drills, runbooks.
-- `coding/` — C++17 CP reference handbook, contest submissions.
-- `resume/` — LaTeX resume versions for roles/companies.
+- `src/behavioral/` — work stories + reference prep guidance.
+- `src/system-design/` — architecture examples, patterns, AWS drills, runbooks.
+- `src/coding/` — C++17 CP reference handbook, contest submissions.
+- `src/resume/` — LaTeX resume versions for roles/companies.
 
 ## Rules
 

@@ -14,10 +14,10 @@ Three pillars (resume is a separate output produced from them):
 
 | Path | Content |
 | --- | --- |
-| [`behavioral/`](behavioral/README.md) | Work stories + [`reference/`](behavioral/reference/README.md) prep guidance for behavioral rounds |
-| [`system-design/`](system-design/README.md) | Architecture examples, patterns, AWS drills, 60-minute runbooks |
-| [`coding/`](coding/README.md) | C++17 CP reference handbook, contest submissions |
-| [`resume/`](resume/README.md) | LaTeX resume versions for different roles/companies |
+| [`src/behavioral/`](src/behavioral/README.md) | Work stories + [`reference/`](src/behavioral/reference/README.md) prep guidance for behavioral rounds |
+| [`src/system-design/`](src/system-design/README.md) | Architecture examples, patterns, AWS drills, 60-minute runbooks |
+| [`src/coding/`](src/coding/README.md) | C++17 CP reference handbook, contest submissions |
+| [`src/resume/`](src/resume/README.md) | LaTeX resume versions for different roles/companies |
 
 ## Quick start
 
@@ -29,5 +29,5 @@ markdownlint '**/*.md' --ignore node_modules
 lychee '**/*.md' --exclude 'https://linkedin.com'
 
 # Compile a resume
-latexmk -pdf resume/general.tex
+latexmk -pdf src/resume/general.tex
 ```
