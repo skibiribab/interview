@@ -2,6 +2,14 @@
 
 Interview preparation monorepo — behavioral, system design, coding, and resumes.
 
+## Focus
+
+Three pillars (resume is a separate output produced from them):
+
+- **Behavioral** — work stories + reference prep guidance.
+- **System design** — architecture examples, patterns, AWS drills, runbooks.
+- **Coding** — C++17 CP reference handbook, contest submissions.
+
 ## Sections
 
 | Path | Content |
