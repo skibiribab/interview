@@ -7,19 +7,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: docker build --target lint -t interview-lint -f src/docker/Dockerfile .
+      - run: docker build --target lint -t interview-lint -f docker/Dockerfile .
       - run: docker run interview-lint
 
   resume:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: docker build --target resume -t interview-resume -f src/docker/Dockerfile .
+      - run: docker build --target resume -t interview-resume -f docker/Dockerfile .
       - run: docker run interview-resume
 
   coding:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: docker build --target coding -t interview-coding -f src/docker/Dockerfile .
+      - run: docker build --target coding -t interview-coding -f docker/Dockerfile .
       - run: docker run interview-coding
