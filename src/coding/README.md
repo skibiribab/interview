@@ -7,7 +7,7 @@ C++17 **competitive programming** reference — algorithm templates plus **solve
 | [reference/](reference/) | Handbook-style templates (graphs, DP, strings, math, data structures) |
 | [solved/](solved/) | Accepted solutions by platform (`{platform}/{slug}.cpp`) |
 
-**Sibling folders:** [`system-design`](../system-design/) · [`behavioral`](../behavioral/) · **Hub:** [`coding/`](https://github.com/gardusig/interview/tree/main/coding).
+**Sibling folders:** [`system-design`](../system-design/) · [`behavioral`](../behavioral/) · **Hub:** [`coding/`](https://github.com/skibiribab/interview/tree/main/coding).
 
 ## Reference topics
 

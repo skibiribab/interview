@@ -1,10 +1,10 @@
-# gardusig/system-design
+# skibiribab/system-design
 
 Public **system design interview** reference — architecture examples, AWS drills, and topic notes.
 
 **Practice folder** — large-scale architecture, interview examples, AWS drills.
 
-**Hub checkout:** [`system-design/`](https://github.com/gardusig/interview/tree/main/system-design) in [gardusig/interview](https://github.com/gardusig/interview) · **Interview index:** [`../`](../) · **Siblings:** [`coding`](../coding/) · [`behavioral`](../behavioral/)
+**Hub checkout:** [`system-design/`](https://github.com/skibiribab/interview/tree/main/system-design) in [skibiribab/interview](https://github.com/skibiribab/interview) · **Interview index:** [`../`](../) · **Siblings:** [`coding`](../coding/) · [`behavioral`](../behavioral/)
 
 ## 📇 Index
 
