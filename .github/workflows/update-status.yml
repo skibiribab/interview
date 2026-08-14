@@ -15,4 +15,4 @@ jobs:
       - name: Notify status listener
         run: gh api repos/skibiribab/control-plane/dispatches -f event_type=repo-status
         env:
-          GH_TOKEN: ${{ secrets.PUBLIC_REPO_WRITE_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN_REPO_WRITE }}
