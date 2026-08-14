@@ -2,17 +2,19 @@ name: Release
 
 on:
   push:
-    tags:
-      - '*'
+    branches: [main]
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - run: docker build --target resume -t interview-resume -f .github/docker/Dockerfile .
       - run: docker run --name resume-build interview-resume
@@ -31,14 +33,17 @@ jobs:
           cp "${pdfs[@]}" artifacts/
           ls -la artifacts/
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: resumes
-          path: artifacts/*.pdf
-          if-no-files-found: error
+      - name: Publish tag
+        id: tag
+        run: |
+          TAG="$(date -u +%Y-%m-%dT%H-%M-%SZ)"
+          git tag "$TAG"
+          git push origin "$TAG"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
 
       - uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ steps.tag.outputs.tag }}
           files: artifacts/*.pdf
           fail_on_unmatched_files: true
           generate_release_notes: true
