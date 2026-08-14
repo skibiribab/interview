@@ -2,9 +2,9 @@
 set -euo pipefail
 
 shopt -s nullglob
-files=(resume/*.tex)
+files=(src/resume/*.tex)
 if [[ ${#files[@]} -eq 0 ]]; then
-  echo "No resume .tex files found under resume/" >&2
+  echo "No resume .tex files found under src/resume/" >&2
   exit 1
 fi
 
