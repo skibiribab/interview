@@ -18,6 +18,7 @@ Three pillars (resume is a separate output produced from them):
 | [`src/system-design/`](src/system-design/README.md) | Architecture examples, patterns, AWS drills, 60-minute runbooks |
 | [`src/coding/`](src/coding/README.md) | C++17 CP reference handbook, contest submissions |
 | [`src/resume/`](src/resume/README.md) | LaTeX resume versions for different roles/companies |
+| [`docs/ecosystem.md`](docs/ecosystem.md) | Repo → tech map of the whole ecosystem |
 
 ## Quick start
 
