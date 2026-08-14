@@ -16,12 +16,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - run: docker build --target resume -t interview-resume -f .github/docker/Dockerfile .
+      - run: docker build --target resume -t interview-resume -f docker/Dockerfile .
       - run: docker run --name resume-build interview-resume
       - name: Copy PDFs from container
         run: |
           mkdir -p artifacts
-          docker cp resume-build:/workspace/resume/. /tmp/resume-out/
+          docker cp resume-build:/workspace/src/resume/. /tmp/resume-out/
           docker rm resume-build
           shopt -s nullglob
           pdfs=(/tmp/resume-out/*.pdf)
