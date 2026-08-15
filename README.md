@@ -1,4 +1,4 @@
-# gardusig/interview
+# interview
 
 Interview preparation monorepo — behavioral, system design, coding, and resumes.
 
