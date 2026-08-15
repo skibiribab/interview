@@ -15,6 +15,6 @@ jobs:
     timeout-minutes: 2
     steps:
       - name: Notify status listener
-        run: gh api repos/skibiribab/automation/dispatches -f event_type=repo-status
+        run: gh api repos/umbanda-oss/automation/dispatches -f event_type=repo-status
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN_REPO_WRITE }}
